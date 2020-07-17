@@ -19,7 +19,7 @@ pipeline {
       }
     }
 
-    stage('Test Image' ) {
+    stage('Test Docker Image' ) {
                 agent {
                 docker { image 'arman912/simple-nginx-html:$BUILD_NUMBER' }
             }
